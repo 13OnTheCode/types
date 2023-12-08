@@ -1,0 +1,51 @@
+{
+  "name": "@13onthecode/types",
+  "version": "0.0.1",
+  "description": "A collection of TypeScript utility types",
+  "type": "module",
+  "license": "MIT",
+  "homepage": "https://github.com/13OnTheCode/types#readme",
+  "bugs": "https://github.com/13OnTheCode/types/issues",
+  "author": {
+    "name": "13OnTheCode",
+    "email": "13@ryongyon.com",
+    "url": "https://ryongyon.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/13OnTheCode/types.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "typescript",
+    "types",
+    "utils"
+  ],
+  "engines": {
+    "node": ">=16"
+  },
+  "scripts": {
+    "build": "unbuild"
+  },
+  "devDependencies": {
+    "@13onthecode/eslint-config": "^1.1.9",
+    "@13onthecode/typescript-config": "^0.0.5",
+    "eslint": "^8.55.0",
+    "typescript": "^5.3.2",
+    "unbuild": "^2.0.0"
+  },
+  "peerDependencies": {
+    "typescript": ">=5.0.0"
+  },
+  "peerDependenciesMeta": {
+    "typescript": {
+      "optional": true
+    }
+  },
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ]
+}
