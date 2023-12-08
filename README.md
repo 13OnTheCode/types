@@ -1,6 +1,6 @@
-# @13onthecode/types
+# @13OnTheCode/Types
 
-<img src="https://github-production-user-asset-6210df.s3.amazonaws.com/137921275/258572450-d0a2270e-45ad-4ed4-aed0-b5c0a2eea988.svg" width="100" height="100" align="right" alt="Typescript" />
+<img src="https://github-production-user-asset-6210df.s3.amazonaws.com/137921275/258572450-d0a2270e-45ad-4ed4-aed0-b5c0a2eea988.svg" width="100" height="100" align="right" alt="TypeScript" />
 
 [![Version](https://img.shields.io/npm/v/@13onthecode/types?color=1976d2&label=)](https://www.npmjs.com/package/@13onthecode/types)
 [![License](https://img.shields.io/npm/l/@13onthecode/types?color=1976d2&label=)](LICENSE.md)
@@ -11,7 +11,8 @@ A collection of TypeScript utility types
 
 ## Prerequisites
 
-- TypeScript version >= 5.0.0
+### TypeScript
+- Version >= 5.0.0
 
 ## Install
 
@@ -136,6 +137,11 @@ type DeepMerged = MergeObject<Foo, Bar, { mode: 'deep' }>
 
 - [`Replace`](src/String/Replace.ts)
 - [`Split`](src/String/Split.ts)
+
+## Check Also
+
+- [`@13OnTheCode/Typescript-Config`](https://github.com/13OnTheCode/typescript-config)
+- [`@13OnTheCode/Utils`](https://github.com/13OnTheCode/utils)
 
 ## License
 
