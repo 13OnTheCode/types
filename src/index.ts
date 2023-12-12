@@ -50,6 +50,11 @@ export * from './Guard/IsUnion'
 export * from './Guard/IsUnknown'
 
 /**
+ * Map
+**/
+export * from './Map/MergeMap'
+
+/**
  * Object
 **/
 export * from './Object/MergeObject'

@@ -61,6 +61,14 @@ type DeepMerged = MergeObject<Foo, Bar, { mode: 'deep' }>
 
 ## API
 
+### Array
+
+- [`GetHead`](src/Array/GetHead.ts)
+- [`GetLast`](src/Array/GetLast.ts)
+- [`GetTail`](src/Array/GetTail.ts)
+- [`Includes`](src/Array/Includes.ts)
+- [`MergeArray`](src/Array/MergeArray.ts)
+
 ### Base
 
 - [`EmptyArray`](src/Base/EmptyArray.ts)
@@ -101,6 +109,19 @@ type DeepMerged = MergeObject<Foo, Bar, { mode: 'deep' }>
 - [`IsUnion`](src/Guard/IsUnion.ts)
 - [`IsUnknown`](src/Guard/IsUnknown.ts)
 
+### Map
+
+- [`MergeMap`](src/Map/MergeMap.ts)
+
+### Object
+
+- [`MergeObject`](src/Object/MergeObject.ts)
+
+### String
+
+- [`Replace`](src/String/Replace.ts)
+- [`Split`](src/String/Split.ts)
+
 ### Utils
 
 - [`Entries`](src/Utils/Entries.ts)
@@ -120,23 +141,6 @@ type DeepMerged = MergeObject<Foo, Bar, { mode: 'deep' }>
 - [`ToPrimitive`](src/Utils/ToPrimitive.ts)
 - [`ToUnion`](src/Utils/ToUnion.ts)
 - [`Writable`](src/Utils/Writable.ts)
-
-### Array
-
-- [`GetHead`](src/Array/GetHead.ts)
-- [`GetLast`](src/Array/GetLast.ts)
-- [`GetTail`](src/Array/GetTail.ts)
-- [`Includes`](src/Array/Includes.ts)
-- [`MergeArray`](src/Array/MergeArray.ts)
-
-### Object
-
-- [`MergeObject`](src/Object/MergeObject.ts)
-
-### String
-
-- [`Replace`](src/String/Replace.ts)
-- [`Split`](src/String/Split.ts)
 
 ## Check Also
 
