@@ -1,10 +1,9 @@
 import type { UnknownSet } from '../Base/UnknownSet'
 
-import type { IsAny } from './IsAny'
-import type { IsNever } from './IsNever'
+import type { IsAnyOrNever } from './IsAnyOrNever'
 
 export type IsSet<T> = (
-  [T, IsAny<T> | IsNever<T>] extends [UnknownSet, false]
+  [T, IsAnyOrNever<T>] extends [UnknownSet, false]
     ? true
     : false
 )

@@ -1,10 +1,9 @@
 import type { EmptyArray } from '../Base/EmptyArray'
 
-import type { IsAny } from './IsAny'
-import type { IsNever } from './IsNever'
+import type { IsAnyOrNever } from './IsAnyOrNever'
 
 export type IsEmptyArray<T> = (
-  [T, IsAny<T> | IsNever<T>] extends [EmptyArray, false]
+  [T, IsAnyOrNever<T>] extends [EmptyArray, false]
     ? true
     : false
 )

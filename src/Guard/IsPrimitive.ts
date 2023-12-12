@@ -1,10 +1,9 @@
 import type { Primitive } from '../Base/Primitive'
 
-import type { IsAny } from './IsAny'
-import type { IsNever } from './IsNever'
+import type { IsAnyOrNever } from './IsAnyOrNever'
 
 export type IsPrimitive<T> = (
-  [T, IsAny<T> | IsNever<T>] extends [Primitive, false]
+  [T, IsAnyOrNever<T>] extends [Primitive, false]
     ? true
     : false
 )

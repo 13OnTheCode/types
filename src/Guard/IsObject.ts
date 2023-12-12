@@ -1,10 +1,9 @@
 import type { UnknownObject } from '../Base/UnknownObject'
 
-import type { IsAny } from './IsAny'
-import type { IsNever } from './IsNever'
+import type { IsAnyOrNever } from './IsAnyOrNever'
 
 export type IsObject<T> = (
-  [T, IsAny<T> | IsNever<T>] extends [UnknownObject, false]
+  [T, IsAnyOrNever<T>] extends [UnknownObject, false]
     ? true
     : false
 )

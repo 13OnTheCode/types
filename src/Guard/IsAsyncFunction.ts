@@ -1,10 +1,9 @@
 import type { UnknownAsyncFunction } from '../Base/UnknownAsyncFunction'
 
-import type { IsAny } from './IsAny'
-import type { IsNever } from './IsNever'
+import type { IsAnyOrNever } from './IsAnyOrNever'
 
 export type IsAsyncFunction<T> = (
-  [T, IsAny<T> | IsNever<T>] extends [UnknownAsyncFunction, false]
+  [T, IsAnyOrNever<T>] extends [UnknownAsyncFunction, false]
     ? true
     : false
 )

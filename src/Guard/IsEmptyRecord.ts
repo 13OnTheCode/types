@@ -1,10 +1,9 @@
 import type { EmptyRecord } from '../Base/EmptyRecord'
 
-import type { IsAny } from './IsAny'
-import type { IsNever } from './IsNever'
+import type { IsAnyOrNever } from './IsAnyOrNever'
 
 export type IsEmptyRecord<T> = (
-  [T, IsAny<T> | IsNever<T>] extends [EmptyRecord, false]
+  [T, IsAnyOrNever<T>] extends [EmptyRecord, false]
     ? true
     : false
 )

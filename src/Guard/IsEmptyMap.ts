@@ -1,10 +1,9 @@
 import type { EmptyMap } from '../Base/EmptyMap'
 
-import type { IsAny } from './IsAny'
-import type { IsNever } from './IsNever'
+import type { IsAnyOrNever } from './IsAnyOrNever'
 
 export type IsEmptyMap<T> = (
-  [T, IsAny<T> | IsNever<T>] extends [EmptyMap, false]
+  [T, IsAnyOrNever<T>] extends [EmptyMap, false]
     ? true
     : false
 )
