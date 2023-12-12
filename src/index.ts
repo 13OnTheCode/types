@@ -30,6 +30,7 @@ export * from './Base/UnknownTuple'
  * Guard
 **/
 export * from './Guard/IsAny'
+export * from './Guard/IsAnyOrNever'
 export * from './Guard/IsArray'
 export * from './Guard/IsAsyncFunction'
 export * from './Guard/IsEmptyArray'
