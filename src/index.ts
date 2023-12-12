@@ -60,6 +60,11 @@ export * from './Map/MergeMap'
 export * from './Object/MergeObject'
 
 /**
+ * Set
+**/
+export * from './Set/MergeSet'
+
+/**
  * String
 **/
 export * from './String/Replace'

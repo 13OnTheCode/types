@@ -117,6 +117,10 @@ type DeepMerged = MergeObject<Foo, Bar, { mode: 'deep' }>
 
 - [`MergeObject`](src/Object/MergeObject.ts)
 
+### Set
+
+- [`MergeSet`](src/Set/MergeSet.ts)
+
 ### String
 
 - [`Replace`](src/String/Replace.ts)
