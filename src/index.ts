@@ -52,6 +52,7 @@ export * from './Guard/IsObject'
 export * from './Guard/IsPrimitive'
 export * from './Guard/IsSet'
 export * from './Guard/IsTuple'
+export * from './Guard/IsTypeEqual'
 export * from './Guard/IsUnion'
 export * from './Guard/IsUnknown'
 

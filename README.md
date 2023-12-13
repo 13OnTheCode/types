@@ -112,6 +112,7 @@ type DeepMerged = MergeObject<Foo, Bar, { mode: 'deep' }>
 - [`IsPrimitive`](src/Guard/IsPrimitive.ts)
 - [`IsSet`](src/Guard/IsSet.ts)
 - [`IsTuple`](src/Guard/IsTuple.ts)
+- [`IsTypeEqual`](src/Guard/IsTypeEqual.ts)
 - [`IsUnion`](src/Guard/IsUnion.ts)
 - [`IsUnknown`](src/Guard/IsUnknown.ts)
 
