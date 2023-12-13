@@ -1,7 +1,3 @@
-import type { isType } from './isType'
+import type { IsLiteral } from './IsLiteral'
 
-export type IsSymbolLiteral<T> = (
-  [isType<T, symbol>, isType<symbol, T>] extends [true, false]
-    ? true
-    : false
-)
+export type IsSymbolLiteral<T> = IsLiteral<T, symbol>
