@@ -90,7 +90,6 @@ type DeepMerged = MergeObject<Foo, Bar, { mode: 'deep' }>
 ### Guard
 
 - [`IsAny`](src/Guard/IsAny.ts)
-- [`IsAnyOrNever`](src/Guard/IsAnyOrNever.ts)
 - [`IsArray`](src/Guard/IsArray.ts)
 - [`IsArrayBuffer`](src/Guard/IsArrayBuffer.ts)
 - [`IsArrayBufferView`](src/Guard/IsArrayBufferView.ts)
