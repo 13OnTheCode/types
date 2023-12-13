@@ -149,6 +149,7 @@ type DeepMerged = MergeObject<Foo, Bar, { mode: 'deep' }>
 - [`ToNumber`](src/Utils/ToNumber.ts)
 - [`ToPrimitive`](src/Utils/ToPrimitive.ts)
 - [`ToUnion`](src/Utils/ToUnion.ts)
+- [`TypeMatch`](src/Utils/TypeMatch.ts)
 - [`Writable`](src/Utils/Writable.ts)
 
 ## Check Also
