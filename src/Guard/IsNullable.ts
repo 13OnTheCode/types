@@ -1,3 +1,3 @@
-import type { TypeMatch } from '../Utils/TypeMatch'
+import type { isType } from './isType'
 
-export type IsNullable<T> = TypeMatch<T, null | undefined>
+export type IsNullable<T> = isType<T, null | undefined>

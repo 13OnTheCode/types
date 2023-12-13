@@ -1,4 +1,5 @@
 import type { UnknownSet } from '../Base/UnknownSet'
-import type { TypeMatch } from '../Utils/TypeMatch'
 
-export type IsSet<T> = TypeMatch<T, UnknownSet>
+import type { isType } from './isType'
+
+export type IsSet<T> = isType<T, UnknownSet>

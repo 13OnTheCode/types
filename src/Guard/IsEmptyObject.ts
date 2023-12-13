@@ -1,4 +1,5 @@
 import type { EmptyObject } from '../Base/EmptyObject'
-import type { TypeMatch } from '../Utils/TypeMatch'
 
-export type IsEmptyObject<T> = TypeMatch<T, EmptyObject>
+import type { isType } from './isType'
+
+export type IsEmptyObject<T> = isType<T, EmptyObject>

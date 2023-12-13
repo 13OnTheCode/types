@@ -1,4 +1,5 @@
 import type { UnknownTuple } from '../Base/UnknownTuple'
-import type { TypeMatch } from '../Utils/TypeMatch'
 
-export type IsTuple<T> = TypeMatch<T, UnknownTuple>
+import type { isType } from './isType'
+
+export type IsTuple<T> = isType<T, UnknownTuple>

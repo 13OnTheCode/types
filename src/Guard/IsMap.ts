@@ -1,4 +1,5 @@
 import type { UnknownMap } from '../Base/UnknownMap'
-import type { TypeMatch } from '../Utils/TypeMatch'
 
-export type IsMap<T> = TypeMatch<T, UnknownMap>
+import type { isType } from './isType'
+
+export type IsMap<T> = isType<T, UnknownMap>

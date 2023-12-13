@@ -1,3 +1,3 @@
-import type { TypeMatch } from '../Utils/TypeMatch'
+import type { isType } from './isType'
 
-export type IsArrayBufferView<T> = TypeMatch<T, ArrayBufferView>
+export type IsArrayBufferView<T> = isType<T, ArrayBufferView>

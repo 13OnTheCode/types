@@ -1,4 +1,5 @@
 import type { UnknownFunction } from '../Base/UnknownFunction'
-import type { TypeMatch } from '../Utils/TypeMatch'
 
-export type IsFunction<T> = TypeMatch<T, UnknownFunction>
+import type { isType } from './isType'
+
+export type IsFunction<T> = isType<T, UnknownFunction>
