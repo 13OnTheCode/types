@@ -1,9 +1,4 @@
 import type { UnknownArray } from '../Base/UnknownArray'
+import type { TypeMatch } from '../Utils/TypeMatch'
 
-import type { IsAnyOrNever } from './IsAnyOrNever'
-
-export type IsArray<T> = (
-  [T, IsAnyOrNever<T>] extends [UnknownArray, false]
-    ? true
-    : false
-)
+export type IsArray<T> = TypeMatch<T, UnknownArray>

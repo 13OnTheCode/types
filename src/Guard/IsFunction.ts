@@ -1,9 +1,4 @@
 import type { UnknownFunction } from '../Base/UnknownFunction'
+import type { TypeMatch } from '../Utils/TypeMatch'
 
-import type { IsAnyOrNever } from './IsAnyOrNever'
-
-export type IsFunction<T> = (
-  [T, IsAnyOrNever<T>] extends [UnknownFunction, false]
-    ? true
-    : false
-)
+export type IsFunction<T> = TypeMatch<T, UnknownFunction>

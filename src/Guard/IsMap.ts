@@ -1,9 +1,4 @@
 import type { UnknownMap } from '../Base/UnknownMap'
+import type { TypeMatch } from '../Utils/TypeMatch'
 
-import type { IsAnyOrNever } from './IsAnyOrNever'
-
-export type IsMap<T> = (
-  [T, IsAnyOrNever<T>] extends [UnknownMap, false]
-    ? true
-    : false
-)
+export type IsMap<T> = TypeMatch<T, UnknownMap>

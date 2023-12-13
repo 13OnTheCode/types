@@ -1,9 +1,4 @@
 import type { EmptyRecord } from '../Base/EmptyRecord'
+import type { TypeMatch } from '../Utils/TypeMatch'
 
-import type { IsAnyOrNever } from './IsAnyOrNever'
-
-export type IsEmptyRecord<T> = (
-  [T, IsAnyOrNever<T>] extends [EmptyRecord, false]
-    ? true
-    : false
-)
+export type IsEmptyRecord<T> = TypeMatch<T, EmptyRecord>

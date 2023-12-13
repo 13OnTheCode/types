@@ -1,9 +1,4 @@
 import type { UnknownObject } from '../Base/UnknownObject'
+import type { TypeMatch } from '../Utils/TypeMatch'
 
-import type { IsAnyOrNever } from './IsAnyOrNever'
-
-export type IsObject<T> = (
-  [T, IsAnyOrNever<T>] extends [UnknownObject, false]
-    ? true
-    : false
-)
+export type IsObject<T> = TypeMatch<T, UnknownObject>

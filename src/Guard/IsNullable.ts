@@ -1,7 +1,3 @@
-import type { IsAnyOrNever } from './IsAnyOrNever'
+import type { TypeMatch } from '../Utils/TypeMatch'
 
-export type IsNullable<T> = (
-  [NonNullable<T>, IsAnyOrNever<T>] extends [never, false]
-    ? true
-    : false
-)
+export type IsNullable<T> = TypeMatch<T, null | undefined>

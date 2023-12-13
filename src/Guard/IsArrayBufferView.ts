@@ -1,7 +1,3 @@
-import type { IsAnyOrNever } from './IsAnyOrNever'
+import type { TypeMatch } from '../Utils/TypeMatch'
 
-export type IsArrayBufferView<T> = (
-  [T, IsAnyOrNever<T>] extends [ArrayBufferView, false]
-    ? true
-    : false
-)
+export type IsArrayBufferView<T> = TypeMatch<T, ArrayBufferView>

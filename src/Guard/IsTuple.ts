@@ -1,9 +1,4 @@
 import type { UnknownTuple } from '../Base/UnknownTuple'
+import type { TypeMatch } from '../Utils/TypeMatch'
 
-import type { IsAnyOrNever } from './IsAnyOrNever'
-
-export type IsTuple<T> = (
-  [T, IsAnyOrNever<T>] extends [UnknownTuple, false]
-    ? true
-    : false
-)
+export type IsTuple<T> = TypeMatch<T, UnknownTuple>

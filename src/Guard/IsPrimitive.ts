@@ -1,9 +1,4 @@
 import type { Primitive } from '../Base/Primitive'
+import type { TypeMatch } from '../Utils/TypeMatch'
 
-import type { IsAnyOrNever } from './IsAnyOrNever'
-
-export type IsPrimitive<T> = (
-  [T, IsAnyOrNever<T>] extends [Primitive, false]
-    ? true
-    : false
-)
+export type IsPrimitive<T> = TypeMatch<T, Primitive>
