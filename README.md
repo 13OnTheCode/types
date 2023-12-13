@@ -91,8 +91,6 @@ type DeepMerged = MergeObject<Foo, Bar, { mode: 'deep' }>
 
 - [`IsAny`](src/Guard/IsAny.ts)
 - [`IsArray`](src/Guard/IsArray.ts)
-- [`IsArrayBuffer`](src/Guard/IsArrayBuffer.ts)
-- [`IsArrayBufferView`](src/Guard/IsArrayBufferView.ts)
 - [`IsAsyncFunction`](src/Guard/IsAsyncFunction.ts)
 - [`IsBigint`](src/Guard/IsBigint.ts)
 - [`IsBigintLiteral`](src/Guard/IsBigintLiteral.ts)

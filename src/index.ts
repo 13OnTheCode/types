@@ -31,8 +31,6 @@ export * from './Base/UnknownTuple'
 **/
 export * from './Guard/IsAny'
 export * from './Guard/IsArray'
-export * from './Guard/IsArrayBuffer'
-export * from './Guard/IsArrayBufferView'
 export * from './Guard/IsAsyncFunction'
 export * from './Guard/IsBigint'
 export * from './Guard/IsBigintLiteral'
