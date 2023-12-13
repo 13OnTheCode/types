@@ -62,6 +62,7 @@ export * from './Guard/IsSymbol'
 export * from './Guard/IsSymbolLiteral'
 export * from './Guard/IsTuple'
 export * from './Guard/isType'
+export * from './Guard/IsUndefined'
 export * from './Guard/IsUnion'
 export * from './Guard/IsUnknown'
 
