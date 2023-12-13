@@ -1,7 +1,3 @@
-import type { IsNullable } from './IsNullable'
+import type { isType } from './isType'
 
-export type IsNonNullable<T> = (
-  [IsNullable<T>] extends [false]
-    ? true
-    : false
-)
+export type IsNonNullable<T> = isType<T, NonNullable<T>>
