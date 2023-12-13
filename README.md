@@ -103,6 +103,7 @@ type DeepMerged = MergeObject<Foo, Bar, { mode: 'deep' }>
 - [`IsEmptySet`](src/Guard/IsEmptySet.ts)
 - [`IsEqual`](src/Guard/IsEqual.ts)
 - [`IsFunction`](src/Guard/IsFunction.ts)
+- [`IsLiteral`](src/Guard/IsLiteral.ts)
 - [`IsMap`](src/Guard/IsMap.ts)
 - [`IsNever`](src/Guard/IsNever.ts)
 - [`IsNonNullable`](src/Guard/IsNonNullable.ts)
