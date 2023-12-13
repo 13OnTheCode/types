@@ -1,5 +1,5 @@
 import type { Primitive } from '../Base/Primitive'
 
-import type { isType } from './isType'
+import type { IsType } from './IsType'
 
-export type IsPrimitive<T> = isType<T, Primitive>
+export type IsPrimitive<T> = IsType<T, Primitive>

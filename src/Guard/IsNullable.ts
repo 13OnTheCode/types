@@ -1,3 +1,3 @@
-import type { isType } from './isType'
+import type { IsType } from './IsType'
 
-export type IsNullable<T> = isType<T, null | undefined>
+export type IsNullable<T> = IsType<T, null | undefined>

@@ -1,5 +1,5 @@
 import type { EmptyRecord } from '../Base/EmptyRecord'
 
-import type { isType } from './isType'
+import type { IsType } from './IsType'
 
-export type IsEmptyRecord<T> = isType<T, EmptyRecord>
+export type IsEmptyRecord<T> = IsType<T, EmptyRecord>

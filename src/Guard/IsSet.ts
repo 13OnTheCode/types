@@ -1,5 +1,5 @@
 import type { UnknownSet } from '../Base/UnknownSet'
 
-import type { isType } from './isType'
+import type { IsType } from './IsType'
 
-export type IsSet<T> = isType<T, UnknownSet>
+export type IsSet<T> = IsType<T, UnknownSet>

@@ -1,3 +1,3 @@
-import type { isType } from './isType'
+import type { IsType } from './IsType'
 
-export type IsNonNullable<T> = isType<T, NonNullable<T>>
+export type IsNonNullable<T> = IsType<T, NonNullable<T>>

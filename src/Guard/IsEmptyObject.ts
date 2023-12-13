@@ -1,5 +1,5 @@
 import type { EmptyObject } from '../Base/EmptyObject'
 
-import type { isType } from './isType'
+import type { IsType } from './IsType'
 
-export type IsEmptyObject<T> = isType<T, EmptyObject>
+export type IsEmptyObject<T> = IsType<T, EmptyObject>
