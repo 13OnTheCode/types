@@ -108,6 +108,8 @@ type DeepMerged = MergeObject<Foo, Bar, { mode: 'deep' }>
 - [`IsNonNullable`](src/Guard/IsNonNullable.ts)
 - [`IsNull`](src/Guard/IsNull.ts)
 - [`IsNullable`](src/Guard/IsNullable.ts)
+- [`IsNumber`](src/Guard/IsNumber.ts)
+- [`IsNumberLiteral`](src/Guard/IsNumberLiteral.ts)
 - [`IsObject`](src/Guard/IsObject.ts)
 - [`IsPrimitive`](src/Guard/IsPrimitive.ts)
 - [`IsSet`](src/Guard/IsSet.ts)
