@@ -144,6 +144,9 @@ type DeepMerged = MergeObject<Foo, Bar, { mode: 'deep' }>
 - [`Replace`](src/String/Replace.ts)
 - [`Split`](src/String/Split.ts)
 
+### Tuple
+- [`TupleToUnion`](src/Tuple/TupleToUnion.ts)
+
 ### Utils
 
 - [`Entries`](src/Utils/Entries.ts)
