@@ -2,6 +2,7 @@
  * Array
 **/
 export * from './Array/GetHead'
+export * from './Array/GetIndexs'
 export * from './Array/GetLast'
 export * from './Array/GetTail'
 export * from './Array/Includes'
