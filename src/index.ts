@@ -89,11 +89,6 @@ export * from './String/Replace'
 export * from './String/Split'
 
 /**
- * Tuple
-**/
-export * from './Tuple/TupleToUnion'
-
-/**
  * Utils
 **/
 export * from './Utils/Entries'
