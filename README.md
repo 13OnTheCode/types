@@ -152,6 +152,7 @@ type DeepMerged = MergeObject<Foo, Bar, { mode: 'deep' }>
 - [`GetReadonly`](src/Utils/GetReadonly.ts)
 - [`GetRequired`](src/Utils/GetRequired.ts)
 - [`GetValues`](src/Utils/GetValues.ts)
+- [`HasIntersection`](src/Utils/HasIntersection.ts)
 - [`OmitIndexSignature`](src/Utils/OmitIndexSignature.ts)
 - [`PickIndexSignature`](src/Utils/PickIndexSignature.ts)
 - [`Prettify`](src/Utils/Prettify.ts)
@@ -163,6 +164,7 @@ type DeepMerged = MergeObject<Foo, Bar, { mode: 'deep' }>
 - [`ToPrimitive`](src/Utils/ToPrimitive.ts)
 - [`ToUnion`](src/Utils/ToUnion.ts)
 - [`UnionToIntersection`](src/Utils/UnionToIntersection.ts)
+- [`UnionToTuple`](src/Utils/UnionToTuple.ts)
 - [`Writable`](src/Utils/Writable.ts)
 
 ## Check Also
