@@ -1,7 +1,7 @@
 /**
  * Array
 **/
-export * from './Array/GetHead'
+export * from './Array/GetFirstElement'
 export * from './Array/GetIndexs'
 export * from './Array/GetLastElement'
 export * from './Array/GetRestElements'

@@ -63,7 +63,7 @@ type DeepMerged = MergeObject<Foo, Bar, { mode: 'deep' }>
 
 ### Array
 
-- [`GetHead`](src/Array/GetHead.ts)
+- [`GetFirstElement`](src/Array/GetFirstElement.ts)
 - [`GetIndexs`](src/Array/GetIndexs.ts)
 - [`GetLastElement`](src/Array/GetLastElement.ts)
 - [`GetRestElements`](src/Array/GetRestElements.ts)
