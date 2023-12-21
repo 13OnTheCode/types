@@ -4,7 +4,7 @@
 export * from './Array/GetHead'
 export * from './Array/GetIndexs'
 export * from './Array/GetLast'
-export * from './Array/GetTail'
+export * from './Array/GetRestElements'
 export * from './Array/Includes'
 export * from './Array/MergeArray'
 

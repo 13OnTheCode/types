@@ -1,6 +1,6 @@
 import type { UnknownArray } from '../Base/UnknownArray'
 
-export type GetTail<T extends UnknownArray> = (
+export type GetRestElements<T extends UnknownArray> = (
   T extends UnknownArray
     ? T extends Readonly<[unknown, ...infer Tail]>
       ? Tail
