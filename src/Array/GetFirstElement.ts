@@ -4,6 +4,6 @@ export type GetFirstElement<T extends UnknownArray> = (
   T extends UnknownArray
     ? T extends Readonly<[infer Head, ...unknown[]]>
       ? Head
-      : T[number]
+      : T[0]
     : never
 )
