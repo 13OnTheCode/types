@@ -1,11 +1,11 @@
 import type { UnknownArray } from '../Base/UnknownArray'
 
-export type GetLast<T extends UnknownArray> = (
+export type GetLastElements<T extends UnknownArray> = (
   T extends UnknownArray
     ? T extends Readonly<[infer Last]>
       ? Last
       : T extends Readonly<[unknown, ...infer Tail]>
-        ? GetLast<Tail>
+        ? GetLastElements<Tail>
         : T[number]
     : never
 )

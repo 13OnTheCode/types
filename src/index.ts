@@ -3,7 +3,7 @@
 **/
 export * from './Array/GetHead'
 export * from './Array/GetIndexs'
-export * from './Array/GetLast'
+export * from './Array/GetLastElements'
 export * from './Array/GetRestElements'
 export * from './Array/Includes'
 export * from './Array/MergeArray'
