@@ -1,5 +1,5 @@
 import type { Primitive } from '../Base/Primitive'
 
-import type { IsType } from './IsType'
+import type { IsExtends } from './IsExtends'
 
-export type IsPrimitive<T> = IsType<T, Primitive>
+export type IsPrimitive<T> = IsExtends<T, Primitive>

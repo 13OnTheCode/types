@@ -1,5 +1,5 @@
 import type { UnknownMap } from '../Base/UnknownMap'
 
-import type { IsType } from './IsType'
+import type { IsExtends } from './IsExtends'
 
-export type IsMap<T> = IsType<T, UnknownMap>
+export type IsMap<T> = IsExtends<T, UnknownMap>

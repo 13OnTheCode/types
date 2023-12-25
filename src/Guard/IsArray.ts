@@ -1,5 +1,5 @@
 import type { UnknownArray } from '../Base/UnknownArray'
 
-import type { IsType } from './IsType'
+import type { IsExtends } from './IsExtends'
 
-export type IsArray<T> = IsType<T, UnknownArray>
+export type IsArray<T> = IsExtends<T, UnknownArray>

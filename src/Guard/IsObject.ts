@@ -1,5 +1,5 @@
 import type { UnknownObject } from '../Base/UnknownObject'
 
-import type { IsType } from './IsType'
+import type { IsExtends } from './IsExtends'
 
-export type IsObject<T> = IsType<T, UnknownObject>
+export type IsObject<T> = IsExtends<T, UnknownObject>

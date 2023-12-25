@@ -1,5 +1,5 @@
 import type { UnknownTuple } from '../Base/UnknownTuple'
 
-import type { IsType } from './IsType'
+import type { IsExtends } from './IsExtends'
 
-export type IsTuple<T> = IsType<T, UnknownTuple>
+export type IsTuple<T> = IsExtends<T, UnknownTuple>

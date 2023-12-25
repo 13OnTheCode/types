@@ -1,3 +1,3 @@
-import type { IsType } from './IsType'
+import type { IsExtends } from './IsExtends'
 
-export type IsNullable<T> = IsType<T, null | undefined>
+export type IsNullable<T> = IsExtends<T, null | undefined>

@@ -1,5 +1,5 @@
 import type { UnknownSet } from '../Base/UnknownSet'
 
-import type { IsType } from './IsType'
+import type { IsExtends } from './IsExtends'
 
-export type IsSet<T> = IsType<T, UnknownSet>
+export type IsSet<T> = IsExtends<T, UnknownSet>

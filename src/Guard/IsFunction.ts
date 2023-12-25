@@ -1,5 +1,5 @@
 import type { UnknownFunction } from '../Base/UnknownFunction'
 
-import type { IsType } from './IsType'
+import type { IsExtends } from './IsExtends'
 
-export type IsFunction<T> = IsType<T, UnknownFunction>
+export type IsFunction<T> = IsExtends<T, UnknownFunction>

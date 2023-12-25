@@ -1,5 +1,5 @@
 import type { UnknownAsyncFunction } from '../Base/UnknownAsyncFunction'
 
-import type { IsType } from './IsType'
+import type { IsExtends } from './IsExtends'
 
-export type IsAsyncFunction<T> = IsType<T, UnknownAsyncFunction>
+export type IsAsyncFunction<T> = IsExtends<T, UnknownAsyncFunction>

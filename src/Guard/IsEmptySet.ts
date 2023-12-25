@@ -1,5 +1,5 @@
 import type { EmptySet } from '../Base/EmptySet'
 
-import type { IsType } from './IsType'
+import type { IsExtends } from './IsExtends'
 
-export type IsEmptySet<T> = IsType<T, EmptySet>
+export type IsEmptySet<T> = IsExtends<T, EmptySet>

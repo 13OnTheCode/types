@@ -1,5 +1,5 @@
 import type { EmptyMap } from '../Base/EmptyMap'
 
-import type { IsType } from './IsType'
+import type { IsExtends } from './IsExtends'
 
-export type IsEmptyMap<T> = IsType<T, EmptyMap>
+export type IsEmptyMap<T> = IsExtends<T, EmptyMap>
