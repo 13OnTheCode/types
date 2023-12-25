@@ -1,10 +1,21 @@
-import type { Primitive } from '../Base/Primitive'
+import type { IsBigintLiteral } from './IsBigintLiteral'
+import type { IsBooleanLiteral } from './IsBooleanLiteral'
+import type { IsNull } from './IsNull'
+import type { IsNumberLiteral } from './IsNumberLiteral'
+import type { IsStringLiteral } from './IsStringLiteral'
+import type { IsSymbolLiteral } from './IsSymbolLiteral'
+import type { IsUndefined } from './IsUndefined'
 
-import type { IsEqual } from './IsEqual'
-import type { IsType } from './IsType'
-
-export type IsLiteral<T1, T2 extends Primitive = Primitive> = (
-  [IsType<T1, T2> | IsType<T2, T2>, IsType<T2, T1>] extends [true, IsEqual<T2, null> | IsEqual<T2, undefined>]
-    ? true
-    : false
+export type IsLiteral<T> = (
+  [
+    IsBigintLiteral<T> |
+    IsBooleanLiteral<T> |
+    IsNull<T> |
+    IsNumberLiteral<T> |
+    IsStringLiteral<T> |
+    IsSymbolLiteral<T> |
+    IsUndefined<T>
+  ] extends [false]
+    ? false
+    : true
 )

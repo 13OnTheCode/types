@@ -1,3 +1,7 @@
-import type { IsLiteral } from './IsLiteral'
+import type { IsExtends } from './IsExtends'
 
-export type IsStringLiteral<T> = IsLiteral<T, string>
+export type IsStringLiteral<T> = (
+  [IsExtends<T, string>, IsExtends<string, T>] extends [true, false]
+    ? true
+    : false
+)
