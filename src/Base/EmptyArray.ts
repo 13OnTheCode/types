@@ -1,1 +1,1 @@
-export type EmptyArray = Readonly<[]>
+export type EmptyArray = Readonly<[] | never[]>
