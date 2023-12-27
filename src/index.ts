@@ -67,6 +67,7 @@ export * from './Guard/IsTuple'
 export * from './Guard/IsUndefined'
 export * from './Guard/IsUnion'
 export * from './Guard/IsUnknown'
+export * from './Guard/IsVariadicTuple'
 
 /**
  * Map

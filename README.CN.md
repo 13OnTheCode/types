@@ -127,6 +127,7 @@ type DeepMerged = MergeObject<Foo, Bar, { mode: 'deep' }>
 - [`IsUndefined`](src/Guard/IsUndefined.ts)
 - [`IsUnion`](src/Guard/IsUnion.ts)
 - [`IsUnknown`](src/Guard/IsUnknown.ts)
+- [`IsVariadicTuple`](src/Guard/IsVariadicTuple.ts)
 
 ### Map
 
