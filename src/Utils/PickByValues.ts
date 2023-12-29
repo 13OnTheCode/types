@@ -6,7 +6,7 @@ import type { IsEqual } from '../Guard/IsEqual'
 
 import type { HasIntersection } from './HasIntersection'
 import type { Prettify } from './Prettify'
-import type { UnionToTuple } from './UnionToTuple'
+import type { ToTuple } from './ToTuple'
 
 type MatchValues<T1, T2, StrictMode extends PickByValuesOptions['isStrict']> = (
   StrictMode extends true ? IsEqual<T1, T2> : HasIntersection<T1, T2>
@@ -24,7 +24,7 @@ type PickByArrayValues<T, Values, Options extends PickByValuesOptions = PickByVa
         : never
       : []
     : T extends UnknownArray
-      ? PickByArrayValues<UnionToTuple<T[number]>, Values, Options>[number][]
+      ? PickByArrayValues<ToTuple<T[number]>, Values, Options>[number][]
       : never
 )
 

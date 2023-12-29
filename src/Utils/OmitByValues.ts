@@ -5,7 +5,8 @@ import type { IsEqual } from '../Guard/IsEqual'
 
 import type { HasIntersection } from './HasIntersection'
 import type { Prettify } from './Prettify'
-import type { UnionToTuple } from './UnionToTuple'
+import type { ToTuple } from './ToTuple'
+import type { ToUnion } from './ToUnion'
 
 type MatchValues<T1, T2, StrictMode extends OmitByValuesOptions['isStrict']> = (
   StrictMode extends true ? IsEqual<T1, T2> : HasIntersection<T1, T2>
@@ -25,7 +26,7 @@ type OmitByArrayValues<T, Values, Options extends OmitByValuesOptions = OmitByVa
         : never
       : []
     : T extends UnknownArray
-      ? OmitByArrayValues<UnionToTuple<T[number]>, Values, Options>[number][]
+      ? ToUnion<OmitByArrayValues<ToTuple<T[number]>, Values, Options>>[]
       : never
 )
 
