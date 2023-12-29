@@ -77,6 +77,7 @@ type DeepMerged = MergeObject<Foo, Bar, { mode: 'deep' }>
 - [`EmptyObject`](src/Base/EmptyObject.ts)
 - [`EmptyRecord`](src/Base/EmptyRecord.ts)
 - [`EmptySet`](src/Base/EmptySet.ts)
+- [`EmptyTuple`](src/Base/EmptyTuple.ts)
 - [`Primitive`](src/Base/Primitive.ts)
 - [`TypedArray`](src/Base/TypedArray.ts)
 - [`UnknownArray`](src/Base/UnknownArray.ts)
