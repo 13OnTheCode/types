@@ -97,6 +97,7 @@ type DeepMerged = MergeObject<Foo, Bar, { mode: 'deep' }>
 - [`IsBigintLiteral`](src/Guard/IsBigintLiteral.ts)
 - [`IsBoolean`](src/Guard/IsBoolean.ts)
 - [`IsBooleanLiteral`](src/Guard/IsBooleanLiteral.ts)
+- [`IsContains`](src/Guard/IsContains.ts)
 - [`IsEmptyArray`](src/Guard/IsEmptyArray.ts)
 - [`IsEmptyMap`](src/Guard/IsEmptyMap.ts)
 - [`IsEmptyObject`](src/Guard/IsEmptyObject.ts)
