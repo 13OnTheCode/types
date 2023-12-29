@@ -166,9 +166,9 @@ type DeepMerged = MergeObject<Foo, Bar, { mode: 'deep' }>
 - [`ToArray`](src/Utils/ToArray.ts)
 - [`ToNumber`](src/Utils/ToNumber.ts)
 - [`ToPrimitive`](src/Utils/ToPrimitive.ts)
+- [`ToTuple`](src/Utils/ToTuple.ts)
 - [`ToUnion`](src/Utils/ToUnion.ts)
 - [`UnionToIntersection`](src/Utils/UnionToIntersection.ts)
-- [`UnionToTuple`](src/Utils/UnionToTuple.ts)
 - [`Writable`](src/Utils/Writable.ts)
 
 ## Check Also
