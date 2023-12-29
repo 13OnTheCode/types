@@ -1,1 +1,1 @@
-export type UnknownArray = Readonly<unknown[]>
+export type UnknownArray = readonly unknown[]
